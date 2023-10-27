@@ -1,0 +1,149 @@
+.reveal .author {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* .reveal .author::first-letter {
+    color: red;
+} */
+
+.reveal section img {
+    border: none;
+    box-shadow: none;
+}
+
+@font-face {
+    font-family: sourcecodepro-light;
+    font-weight: 200;
+    src: local(textbook-bold);
+    src: url('../fonts/SourceCodePro-Light.ttf');
+}
+
+pre,
+.reveal pre code {
+    font-family: 'sourcecodepro-light', textbook, Arial;
+    max-height: none;
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+
+.reveal pre {
+    box-shadow: none;
+}
+
+.reveal .slide-number {
+    font-family: 'sourcecodepro-light', textbook-light, Arial;
+    font-size: .7em;
+    background-color: rgba(255, 255, 255, 0.75);;
+    color: black;
+    padding: 7px;
+    bottom: 20px;
+}
+
+.reveal .columns {
+    display: flex;
+}
+
+.reveal pre.size-L code {
+    font-size: 5em;
+    line-height: 6em;
+}
+
+.reveal pre.size-S code {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.reveal pre.size-XS code {
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.reveal pre.size-XXS code {
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
+
+.reveal pre.size-XXXS code {
+    font-size: 0.5em;
+    line-height: 0.9em;
+}
+
+.reveal .console::before {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    line-height: initial;
+
+    color: black;
+    content: 'Console';
+
+    background-image: url('../images/mac-os-x-buttons.png');
+    background-color: #D6D6D6;
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+    border-left: 8px solid #D6D6D6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.reveal .console code {
+    font-size: 20px;
+    line-height: initial;
+
+    border: 2px solid #D6D6D6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.reveal .paranja {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.reveal .fragment.grow.visible {
+    background: yellow;
+}
+
+.reveal blockquote {
+    box-shadow: none;
+}
+
+.reveal blockquote::before {
+    content: '“';
+    font-size: 150px;
+    display: block;
+    position: absolute;
+    color: #CCC;
+    left: -120px;
+    top: -20px;
+}
+.reveal blockquote::after {
+    content: '„';
+    font-size: 150px;
+    display: block;
+    position: absolute;
+    color: #CCC;
+    right: -80px;
+    bottom: -20px;
+}
+
+.reveal section .pos:before,
+.reveal section .neg:before {
+    margin-right: 15px;
+}
+
+.reveal section .pos,
+.reveal section .neg {
+    text-align: left;
+}
+
+.reveal section .pos:before {
+    content: '✓';
+    color: green !important;
+}
+
+.reveal section .neg:before {
+    content: '✗';
+    color: red !important;
+}
